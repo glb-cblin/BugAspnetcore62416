@@ -1,6 +1,0 @@
-@BugAspnetcore62416_HostAddress = http://localhost:5117
-
-GET {{BugAspnetcore62416_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
