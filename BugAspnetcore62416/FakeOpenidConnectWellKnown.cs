@@ -6,7 +6,7 @@ namespace BugAspnetcore62416;
 [ApiController]    
 public class FakeOpenidConnectWellKnown(JwksOptions jwksOptions) : ControllerBase
 {
-    [HttpGet(".well-known/openid-configration")]
+    [HttpGet(".well-known/openid-configuration")]
     public FakeOidcConfig GetConfig()
     {
         return new FakeOidcConfig();

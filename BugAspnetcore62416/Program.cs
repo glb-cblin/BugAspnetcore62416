@@ -44,7 +44,7 @@ builder.Services.AddAuthentication().AddJwtBearer("myscheme", options =>
         ValidAudience = "dummyaudience",
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero,
-        IssuerSigningKeys = jwksOptions.GetJwks().GetSigningKeys(),
+        //IssuerSigningKeys = jwksOptions.GetJwks().GetSigningKeys(),
     };
     options.MapInboundClaims = false; //by default, .NET brutally maps some claims (https://learn.microsoft.com/en-us/aspnet/core/security/authentication/claims?view=aspnetcore-6.0#claims-namespaces-default-namespaces)
 });
